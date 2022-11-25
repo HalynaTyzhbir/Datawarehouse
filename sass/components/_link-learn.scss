@@ -1,0 +1,19 @@
+.link-learn {
+    font-size: $secondFontSize;
+    letter-spacing: 0.005em;
+    color: $titleTextColor;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &:hover, &:focus {
+        color: $btnColor;
+    }
+
+        .icon-arrow {
+            stroke: $btnColor;
+            fill: $btnColor;
+
+        }
+}

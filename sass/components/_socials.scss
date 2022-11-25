@@ -1,0 +1,52 @@
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    &__item {
+        width: 50px;
+        height: 50px;
+    }
+
+    &__link {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+
+        border: 1px solid transparent;
+        color: $whiteColor;
+        background-color: $textColor;
+
+        transition: background-color $transition, border-color $transition, color $transition;
+
+        &:hover, &:focus {
+            background-color: $whiteColor;
+        }
+        
+            &--blue-facebook:hover,
+            &--blue-facebook:focus {
+                border-color: $hoverFacebookColor;
+                color: $hoverFacebookColor;
+            }
+
+            &--blue-twitter:hover,
+            &--blue-twitter:focus{
+                border-color: $hoverTwitterColor;
+                color: $hoverTwitterColor;
+            }
+
+            &--pink-instagram:hover,
+            &--pink-instagram:focus {
+                border-color: $hoverInstagramColor;
+                color: $hoverInstagramColor;
+            }
+    }
+
+    &__icon {
+        fill: currentColor;
+    }
+}

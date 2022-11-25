@@ -1,0 +1,70 @@
+.testimonials {
+
+    &__title {
+        text-align: center;
+        color: $textColor;
+        
+        margin-bottom: 80px;
+    }
+    &__name {
+        font-family: $fontMontserrat;
+        font-weight: 500;
+        font-size: $secondFontSize;
+        line-height: 1.6;
+        color: $titleTextColor;
+        margin-bottom: 2px;
+    }
+
+    &__link {
+        font-family: $fontMontserrat;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.6;
+        letter-spacing: 0.01em;
+        color: $btnColor;
+
+        display: inline-block;
+        margin-bottom: 18px;
+    }
+
+    &__text {
+        font-size: $secondFontSize;
+        line-height: 1.6;
+    }
+
+    &__img {
+        width: 90px;
+        height: 90px;
+    }
+
+    &__comment {
+        width: 465px;
+        padding: 50px 30px;
+        border-radius: 50px;
+        background-color: $whiteColor;
+
+        display: flex;
+        gap: 15px;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 100px;
+        flex-basis: calc((100% - 100px) / 2);
+    }
+
+    &__container {
+        background-color: $greyBlue;
+        background-image: url("../img/bg-image-testimonials.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        border-radius: 50px;
+
+        padding: 78px 70px;
+    }
+
+
+}

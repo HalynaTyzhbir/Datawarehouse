@@ -1,0 +1,30 @@
+.button-request {
+    font-size: $secondFontSize;
+    letter-spacing: 0.005em;
+    color:  $titleTextColor;
+    background-color: $btnWhiteColor;
+    border: 1px solid $btnColor;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    transition: color $transition, background-color $transition;
+
+        .icon-arrow {
+        stroke: $btnColor;
+        fill: $btnColor;
+        }
+
+    &:hover, &:focus {
+        background-color: $btnColor;
+        color: $whiteColor;
+        
+        .icon-arrow {
+            stroke: currentColor;
+            fill: currentColor;
+        }
+    }
+}
+
